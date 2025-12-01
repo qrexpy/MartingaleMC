@@ -1,6 +1,6 @@
-package net.bennygamble.mixin;
+package net.martingalemc.mixin;
 
-import net.bennygamble.BennyGambleClient;
+import net.martingalemc.MartingaleMCClient;
 import net.minecraft.client.gui.hud.ChatHud;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;
@@ -20,9 +20,9 @@ public class ChatHudMixin {
         // Loss: [System] [CHAT] COINFLIP > You lost! ... has been deducted from your
         // balance.
         if (text.contains("COINFLIP > You won!")) {
-            BennyGambleClient.STRATEGY_MANAGER.onWin();
+            MartingaleMCClient.STRATEGY_MANAGER.onWin();
         } else if (text.contains("COINFLIP > You lost!")) {
-            BennyGambleClient.STRATEGY_MANAGER.onLoss();
+            MartingaleMCClient.STRATEGY_MANAGER.onLoss();
         }
     }
 }

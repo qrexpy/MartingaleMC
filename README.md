@@ -1,4 +1,4 @@
-# BennyGamble
+# MartingaleMC
 
 A Minecraft Fabric mod that automates coinflip gambling using the Martingale strategy.
 
@@ -10,13 +10,13 @@ This mod listens to chat messages to track your coinflip wins and losses, automa
 ## Usage
 1.  **Start Automation**:
     ```
-    /bg start <initial_bet>
+    /mgc start <initial_bet>
     ```
-    Example: `/bg start 100`
+    Example: `/mgc start 100`
 
 2.  **Stop Automation**:
     ```
-    /bg stop
+    /mgc stop
     ```
 
 ## Installation

@@ -1,4 +1,4 @@
-package net.bennygamble;
+package net.martingalemc;
 
 import net.minecraft.client.MinecraftClient;
 
