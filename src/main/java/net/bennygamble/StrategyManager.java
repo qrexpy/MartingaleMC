@@ -7,7 +7,7 @@ public class StrategyManager {
     private long initialBet = 0;
     private long currentBet = 0;
     private boolean isHeads = true; // true = heads, false = tails
-    private boolean waitingForBalance = false;
+    private boolean isHeads = true; // true = heads, false = tails
 
     public void start(long initialBet) {
         this.initialBet = initialBet;
@@ -15,7 +15,6 @@ public class StrategyManager {
         this.active = true;
         // Randomly choose heads or tails to start
         this.isHeads = Math.random() < 0.5;
-        this.waitingForBalance = false;
 
         executeBet();
     }
