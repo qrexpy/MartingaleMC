@@ -15,16 +15,14 @@ public class ChatHudMixin {
         String text = message.getString();
 
         // Check for win/loss messages
-        if (text.contains("Won Coinflip")) {
+        // Win: [System] [CHAT] COINFLIP > You won! Your balance has been increased by
+        // ...
+        // Loss: [System] [CHAT] COINFLIP > You lost! ... has been deducted from your
+        // balance.
+        if (text.contains("COINFLIP > You won!")) {
             BennyGambleClient.STRATEGY_MANAGER.onWin();
-        } else if (text.contains("Lost Coinflip")) {
+        } else if (text.contains("COINFLIP > You lost!")) {
             BennyGambleClient.STRATEGY_MANAGER.onLoss();
-        }
-
-        // Balance check logic could go here if needed
-        // Example: [System] [CHAT] SMP > Balance: £48,001,041
-        if (text.contains("Balance:") && text.contains("SMP")) {
-            // Parse balance if we want to implement safety checks later
         }
     }
 }
