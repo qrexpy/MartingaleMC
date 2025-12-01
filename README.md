@@ -4,8 +4,15 @@ A Minecraft Fabric mod that automates coinflip gambling using the Martingale str
 
 **Developed with Google Antigravity.**
 
+> [!WARNING]
+> The SMP where this mod was tested features no house edge (0% tax) which means that most strategies function as mathematically "fair". 
+> In other coinflip systems, Martingale will **not work** and is guaranteed to lose money long-term.
+
 ## Overview
-This mod listens to chat messages to track your coinflip wins and losses, automatically adjusting your bet size according to the Martingale system (double on loss, reset on win).
+This mod listens to chat messages to track your coinflip wins and losses, automatically adjusting your bet size.
+
+**Current Strategy**: The mod currently implements the **Martingale system** (double on loss, reset on win).
+**Future Plans**: This project will be expanded to feature a wide variety of other gambling methods and strategies in upcoming releases.
 
 ## Usage
 1.  **Start Automation**:
