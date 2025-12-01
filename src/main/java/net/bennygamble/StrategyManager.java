@@ -7,7 +7,6 @@ public class StrategyManager {
     private long initialBet = 0;
     private long currentBet = 0;
     private boolean isHeads = true; // true = heads, false = tails
-    private boolean isHeads = true; // true = heads, false = tails
 
     public void start(long initialBet) {
         this.initialBet = initialBet;
