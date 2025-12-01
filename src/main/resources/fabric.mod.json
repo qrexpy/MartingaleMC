@@ -1,3 +1,33 @@
+{
+    "schemaVersion": 1,
+    "id": "martingalemc",
+    "version": "${version}",
+    "name": "MartingaleMC",
+    "description": "Automated Martingale betting strategy mod.",
+    "authors": [
+        "Me"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/martingalemc/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "net.martingalemc.MartingaleMCClient"
+        ]
+    },
+    "mixins": [
+        "martingalemc.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.5",
+        "minecraft": ">=1.21",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
     "suggests": {
         "another-mod": "*"
     }
